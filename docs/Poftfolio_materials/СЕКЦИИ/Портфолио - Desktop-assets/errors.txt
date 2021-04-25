@@ -1,0 +1,2 @@
+[2020-11-21 21:28:03] layer "Travelwallpaper.jpb": Unsupported extension: jpb
+[2020-11-21 21:28:03] layer "ImacMocup.jpg": Duplicate path: ImacMocup.jpg

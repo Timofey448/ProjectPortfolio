@@ -1,0 +1,4 @@
+[2020-11-26 13:38:02] layer "yurij.kluchevsky@gmail.com": Unsupported extension: com
+[2020-11-26 13:38:02] layer "yurij.kluchevsky": Unsupported extension: kluchevsky
+[2020-11-26 13:38:02] layer "+7 (980) 123-45-67": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2020-11-26 13:38:02] layer "info@somemail.com": Unsupported extension: com
