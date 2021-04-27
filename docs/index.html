@@ -359,14 +359,28 @@
           </div>        
           
           <div class="form-wrapper">
+
             <form class="contacts__form" id="contacts__form">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate incidunt aperiam id iste, harum impedit a aut nulla iusto minima illum, ad rem enim? Nemo aperiam dicta sint accusantium accusamus!          
-              </p>
+              <div class="form-item">
+                <input class="form-field" type="text" name="userName" required>
+                <span class="fake-placeholder">Ваше Имя</span>
+              </div>
+
+              <div class="form-item">
+                <input class="form-field" type="text" name="email">
+                <span class="fake-placeholder">Ваш email</span>
+              </div>
+
+              <div class="form-item">
+                <textarea class="form-field" type="text" name="message"></textarea>
+                <span class="fake-placeholder">Текст сообщения</span>
+              </div>
 
               <div class="form-item">
                 <button type="submit" class="btn-color btn-form">Отправить</button>
               </div>
             </form>
+            
           </div>      
 
         </div>      
@@ -392,6 +406,7 @@
     </a> 
 
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="libs/jquery.validate/jquery.validate/jquery.validate.js"></script>
     <script src="js/main.js"></script> 
   
 </body>

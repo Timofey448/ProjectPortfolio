@@ -329,6 +329,11 @@ button {
     display: none;
   }
 }
+.error {
+  font-size: 10px;
+  color: red;
+  top: 10px;
+}
 .header {
   max-width: 1600px;
   margin-left: auto;
@@ -2094,8 +2099,37 @@ button {
 .form-item {
   position: relative;
   width: 100%;
-  font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 30px;
+}
+.form-field {
+  width: 100%;
+  height: 70px;
+  border: 0px;
+  border-bottom: 1px solid grey;
+  font-size: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: grey;
+  font-size: 20px;
+}
+textarea.form-field {
+  height: 100px;
+  resize: none;
+}
+.fake-placeholder {
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  font-size: 18px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding-top: 20px;
+  color: #acacac;
+}
+.fake-placeholder.active {
+  color: orange;
+  font-size: 0px;
 }
 .btn-form {
   width: 100%;

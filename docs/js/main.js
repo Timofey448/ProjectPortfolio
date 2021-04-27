@@ -69,5 +69,51 @@ $(document).ready(function() {
       document.getElementById('upbutton').style.display = 'none';
     }
   }
-})
+
+  // FORM PLACEHOLDER
+  const formInputs = document.querySelectorAll('.form-field');
+  for(let item of formInputs) {
+    const thisPlaceholder = item.nextElementSibling;
+
+    item.addEventListener('focus', function() {
+      thisPlaceholder.classList.add('active');
+    });
+
+    item.addEventListener('blur', function() {
+      if (item.value == '') {
+        thisPlaceholder.classList.remove('active');
+      }
+    })
+  }
+
+  // FORM PLACEHOLDER
+  $('#contacts__form').validate({
+    rules: {
+      userName: {
+        required: true        
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      message: {
+        required: true
+      }
+    },
+    message: {
+      userName: {
+        required: 'Введите имя'      
+      },
+      email: {
+        required: 'Введите email',
+        email: 'отсутствует символ @'
+      },
+      message: {
+        required: 'Введите текст сообщения'
+      }
+    }
+  })
+});
+
+
 
